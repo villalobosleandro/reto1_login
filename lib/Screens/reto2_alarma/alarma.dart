@@ -54,40 +54,26 @@ class _AlarmScreenState extends State<AlarmScreen> {
                         right: 0,
                         child: Icon(Icons.close),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "you did it! here",
+                      Padding(
+                        padding: const EdgeInsets.only(top: 14.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 14.0),
+                              child: Text(
+                                "you did it! here \nou can manage\nyour alarm, \nchange time and \nother things",
                                 style: TextStyle(fontSize: 18),
                               ),
-                              Text(
-                                "you can manage",
-                                style: TextStyle(fontSize: 18),
-                              ),
-                              Text(
-                                "your alarm,",
-                                style: TextStyle(fontSize: 18),
-                              ),
-                              Text(
-                                "change time and",
-                                style: TextStyle(fontSize: 18),
-                              ),
-                              Text(
-                                "other things",
-                                style: TextStyle(fontSize: 18),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 150.0,
-                            child: SvgPicture.asset("assets/images/party.svg",
-                                height: 150.0, width: 150.0),
-                          )
-                        ],
+                            ),
+                            SizedBox(
+                              height: 150.0,
+                              child: SvgPicture.asset("assets/images/party.svg",
+                                  height: 150.0, width: 150.0),
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
@@ -109,7 +95,7 @@ class _AlarmScreenState extends State<AlarmScreen> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("Alarm"),
+                                Text("Alarm", style: TextStyle(color: Colors.grey),),
                                 FlutterSwitch(
                                   showOnOff: true,
                                   activeTextColor: Colors.grey,
