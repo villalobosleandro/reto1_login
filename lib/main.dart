@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import './Screens/reto1_login/login.dart';
 import './Screens/reto2_alarma/alarma.dart';
+import './Screens/reto3_loadingPage/LoadingScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -48,6 +49,19 @@ class MyApp extends StatelessWidget {
                         },
                         child: Text(
                           "Reto 2 Alarma Screen",
+                          style: TextStyle(color: Colors.white),
+                        )),
+
+                    TextButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.blue),
+                        ),
+                        onPressed: () {
+                          Navigator.push(context, new MaterialPageRoute(builder: (context) => new LoadingScreen()));
+                        },
+                        child: Text(
+                          "Reto 3 Loading Screen",
                           style: TextStyle(color: Colors.white),
                         )),
                   ],

@@ -5,3 +5,6 @@
 
 ## Reto sencillo 2 Alarm Screen
 ![Captura de la app](./.readme-public/captura2.png)
+
+## Reto sencillo 3 Pantalla de carga y redireccionamiento
+![Captura de la app](./.readme-public/captura3.gif)
