@@ -12,8 +12,6 @@ class AlarmScreen extends StatefulWidget {
 
 class _AlarmScreenState extends State<AlarmScreen> {
   bool status1 = false;
-  StepperType stepperType = StepperType.vertical;
-  int _index = 0;
 
   initState() {
     super.initState();
